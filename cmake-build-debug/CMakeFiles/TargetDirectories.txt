@@ -1,0 +1,5 @@
+C:/Users/The_K/source/repos/Classes3.1ex/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/The_K/source/repos/Classes3.1ex/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/The_K/source/repos/Classes3.1ex/cmake-build-debug/src/CMakeFiles/Ex2.dir
+C:/Users/The_K/source/repos/Classes3.1ex/cmake-build-debug/src/CMakeFiles/edit_cache.dir
+C:/Users/The_K/source/repos/Classes3.1ex/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir
