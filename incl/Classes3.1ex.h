@@ -15,16 +15,17 @@ public:
     virtual double square() = 0; // возвращает площадь конкретной фигуры;
     virtual Bounding_Box_Dimensions dimensions() = 0; // размеры описывающего прямоугольника;
     virtual std::string type() = 0; // название конкретного типа, например, вернуть строку Triangle для класса Triangle;
+    void print_Params()
+    {
+        std::cout << "Type: " << this->type() << std::endl;
+        std::cout << "Square: " << this->square() << std::endl;
+        std::cout << "Width: " << this->dimensions().x << std::endl;
+        std::cout << "Height: " << this->dimensions().y << std::endl;
+    }
 };
 
 // сюда можно будет передавать любые фигуры:
-void print_Params(Shape *shape)
-{
-    std::cout << "Type: " << shape->type() << std::endl;
-    std::cout << "Square: " << shape->square() << std::endl;
-    std::cout << "Width: " << shape->dimensions().x << std::endl;
-    std::cout << "Height: " << shape->dimensions().y << std::endl;
-}
+
 
 class Circle: public Shape
 {
@@ -36,7 +37,6 @@ public:
         if(in_rad < 0 || in_rad > 50)
         {
             std::cerr << "Invalid num or bigger than 50";
-            in_rad = 2;
         }
     }
     double square() override

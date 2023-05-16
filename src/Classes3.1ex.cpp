@@ -9,7 +9,12 @@ int main()
     for(int i = 0; i < figure.size();i++)
     {
         std::cout << "--------------------\n";
-        print_Params(figure[i]);
+        figure[i]->print_Params();
+    }
+
+    for (int i = 0; i < figure.size(); i++)
+    {
+        delete figure[i];
     }
     return 0;
 }
